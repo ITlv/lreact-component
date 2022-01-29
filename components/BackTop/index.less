@@ -1,0 +1,23 @@
+.ant-back-top-content{
+    background-color:transparent !important;
+    border-radius: 0;
+    width: 46px;
+    height: 46px;
+    .ant-back-top-icon{
+        position: relative;
+        &::after{
+            position: absolute;
+            content:'';
+            background: url('./image/back.png');
+            background-color: transparent!important;
+            background-size: 100% 100%;
+            width: 44px;
+            height: 44px;
+            top: 0;
+            left: 0;
+        }
+        .anticon{
+            display: none;
+        }
+    }
+}

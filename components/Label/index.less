@@ -1,0 +1,22 @@
+.label-css{
+    position: relative;
+    margin:0 0 20px 0;
+    padding:0 0 0 16px;
+    span{
+        font-size: 20px;
+        font-family: PingFangSC, PingFangSC-Semibold;
+        font-weight: 600;
+        color: #333333;
+    }
+    &::after{
+        position: absolute;
+        content:'';
+        width: 6px;
+        height: 20px;
+        background: #1890ff;
+        margin-bottom: 20px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

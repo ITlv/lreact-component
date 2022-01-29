@@ -1,0 +1,31 @@
+.progress-css{
+    position: relative;
+    z-index: 3;
+    span{
+        padding: 4px;
+    }
+    .showTip{
+        position: absolute;
+        bottom: 15px;
+        background: #2d55eb;
+        font-size: 10px;
+        color: #ffffff;
+        span{
+            white-space: nowrap;
+        }
+    }
+    .trangle-pro{
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: -3px;
+        border-top: 5px solid #2d55eb;
+        border-bottom: 5px solid transparent !important;
+        border-left: 5px solid #2d55eb;
+        border-right: 5px solid transparent!important;
+        transform: rotate(-135deg);
+    }
+    .ant-progress-inner{
+        background-color: transparent!important;
+    }
+}

@@ -1,0 +1,53 @@
+.antdComponent-cascader{
+    min-width: 320px;
+    input{
+        min-height: 40px;
+        font-size: 16px;
+    }
+    .ant-cascader-picker-label{
+        font-size: 16px;
+    }
+}
+.ant-cascader-menus{
+    .ant-cascader-menu{
+        li{
+            min-width: 224px;
+        }
+        .ant-cascader-menu-item-active{
+            background: transparent;
+            color: #1890FF;
+            .anticon-right{
+                color: #1890FF !important;
+            }
+        }
+    }
+    >div>ul:last-child .ant-cascader-menu-item{
+        position: relative;
+        // &::after{
+        // position: absolute;
+        // content:'';
+        // background: url('../public/g.png');
+        // width: 16px;
+        // height: 16px;
+        // background-size: 100% 100%;
+        // top: 50%;
+        // right: 12px;
+        // transform: translateY(-50%);
+        // }
+    }
+    >div>ul:last-child {
+        .ant-cascader-menu-item-active{
+            &::after{
+                background: url('../public/g_selected.png');
+                position: absolute;
+                content:'';
+                width: 16px;
+                height: 16px;
+                background-size: 100% 100%;
+                top: 50%;
+                right: 12px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

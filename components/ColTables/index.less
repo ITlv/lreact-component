@@ -1,0 +1,31 @@
+.ant-component-colTables{
+    border: 1px solid rgba(0,0,0,0.15);
+    .ant-col{
+        border-right: 1px solid rgba(0,0,0,0.15);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 60px;
+        box-sizing: border-box;
+    }
+    .ant-col:nth-child(3n){
+        border-right: 0 solid rgba(0,0,0,0.15);
+    }
+    .ant-col:nth-child(n+4){
+        border-top: 1px solid rgba(0,0,0,0.15);
+    }
+    .label{
+        height: 60px;
+        background: #fafafa;
+        text-align: right;
+        padding-right: 9px;
+    }
+    .value{
+        height: 60px;
+        background: #ffffff;
+        text-align: left;
+        border-right: 0 solid rgba(0,0,0,0.15);
+        padding-left: 9px;
+        font-weight: 600;
+    }
+}
